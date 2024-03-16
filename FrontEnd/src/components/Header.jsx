@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <div className='sticky top-0 z-10 bg-white w-full'>
-      <div className='flex justify-between px-4 py-4 shadow-lg'>
+      <div className='flex justify-between px-4 py-5 shadow-lg'>
         <img className='w-20 sm:w-40' alt='Header Logo' src={HeaderLogo}/>
         <input className='w-40 sm:w-96 border text-center border-spacing-2  font-bold rounded-lg text-sm md:text-lg' placeholder='Search...' onChange={handleSearch}></input>
         <Button label="login"/>
