@@ -13,7 +13,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className='flex flex-col sm:flex-row h-screen'>
+     <div className='flex flex-col sm:flex-row  h-screen'>
       {/* Left Section */}
       <div className='flex-1 flex justify-center items-center bg-white'> 
         <div className='text-center'>
