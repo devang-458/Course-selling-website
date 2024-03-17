@@ -12,7 +12,7 @@ const PasswordInput = ({setPassword}) => {
         
         <label htmlFor="password" className="text-sm font-medium text-left pt-2">Password:-</label>
         
-        <button  className="border rounded p-1 text-sm bg-slate-500 mr-3 text-white " 
+        <button  className="border rounded p-1  text-sm bg-slate-500 mr-3 text-white " 
         onClick={togglePasswordVisibility}>
             {showPassword ? "Hide" : "Show"}
         </button>
@@ -21,7 +21,7 @@ const PasswordInput = ({setPassword}) => {
 
         <input 
         type={showPassword ? 'text' : 'password'}
-        className="p-1 text-lg w-80 border-slate-500 rounded border px-2"
+        className="p-1 text-sm w-60 md:w-80 border-slate-500 rounded border px-2"
         id="password"
         placeholder="***********"
         name="password"

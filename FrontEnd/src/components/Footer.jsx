@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from './Button';
 import { FaInstagram, FaFacebookSquare } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
@@ -7,6 +6,22 @@ export default function Footer() {
     return (
         <div>
             <div className="flex flex-row h-full">
+            <div className="flex-1 relative sm:flex-col flex-col">
+                <div className="bg-gray-100 h-full" style={{ backgroundImage: "url(https://cdn.pixabay.com/photo/2024/02/19/08/49/hibiscus-8582876_1280.jpg)", backgroundSize: "cover" }}>
+                    {/* Content for the second half */}
+                    <div className="h-full flex flex-col justify-center items-center " style={{ backdropFilter: "blur(5px)" }}>
+                        <h1 className='text-lg md:text-2xl pb-4 shadow-lg text-white'>Share Your Thought </h1>
+                        <textarea className='w-60 h-20 mb-4 border-black rounded p-2 resize-none' placeholder='Type your message here'></textarea>
+                        
+                        <div className="flex items-center justify-center space-x-6 py-4">
+                    <FaInstagram className="text-3xl text-white hover:text-gray-800 cursor-pointer" />
+                    <FaFacebookSquare className="text-3xl text-white hover:text-gray-800 cursor-pointer" />
+                    <FaXTwitter className="text-3xl text-white hover:text-gray-800 cursor-pointer" />
+                    <CiLinkedin className="text-3xl text-white hover:text-gray-800 cursor-pointer" />
+                </div>
+                    </div>
+                </div>
+            </div>
             <div className="flex-1">
                 <div className="bg-gray-200 h-full p-10">
                     {/* Content for the first half */}
@@ -35,22 +50,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="flex-1 relative">
-                <div className="bg-gray-100 h-full" style={{ backgroundImage: "url(https://cdn.pixabay.com/photo/2024/02/19/08/49/hibiscus-8582876_1280.jpg)", backgroundSize: "cover" }}>
-                    {/* Content for the second half */}
-                    <div className="h-full flex flex-col justify-center items-center " style={{ backdropFilter: "blur(5px)" }}>
-                        <h1 className='text-lg md:text-2xl pb-4 shadow-lg text-white'>Share Your Thought </h1>
-                        <textarea className='w-60 h-20 mb-4 border-black rounded p-2 resize-none' placeholder='Type your message here'></textarea>
-                        <Button label={"Submit"} />
-                        <div className="flex items-center justify-center space-x-6 py-4">
-                    <FaInstagram className="text-3xl text-white hover:text-gray-800 cursor-pointer" />
-                    <FaFacebookSquare className="text-3xl text-white hover:text-gray-800 cursor-pointer" />
-                    <FaXTwitter className="text-3xl text-white hover:text-gray-800 cursor-pointer" />
-                    <CiLinkedin className="text-3xl text-white hover:text-gray-800 cursor-pointer" />
-                </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         <div>
        
