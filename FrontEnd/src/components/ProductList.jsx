@@ -2,11 +2,11 @@ import React from "react";
 
 export default function ProductList() {
   return (
-    <div className="flex flex-col md:flex-row justify-center m-4 rounded-xl h-screen " style={{background:"url(https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)" , backgroundSize: "cover" }}>
-      <div className="flex justify-center flex-col mt-60 md:mt-10 px-14">
-        <h1 className="my-2 text-4xl md:text-6xl font-bold text-center text-white">Our Products</h1>
-        <div className="border-b-4 border-white w-1/2 mx-auto "></div>
-        <div className="flex flex-col sm:flex-row justify-center items-center  m-10">
+    <div  className="flex flex-col md:flex-row justify-center bg-blue-200 rounded-xl h-fit sm:h-screen mx-16 sm:mx-38 ">
+      <div className="flex justify-center flex-col mt-2 px-14">
+        <h1 className="mt-2 text-2xl sm:text-4xl md:text-6xl font-bold text-center text-black">Our Products</h1>
+        <div className="border-b-4 mt-1 border-black w-1/2 mx-auto "></div>
+        <div className="flex flex-col sm:flex-row justify-center items-center mt-6">
           <ProductCard
             title="Training Course"
             imageUrl="https://imgs.search.brave.com/jrZOI0ALvjQm4oB-0U3E00LY1qkRU6Lav7QVE8OEXI0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by93ZWJpbmFyLWUt/bGVhcm5pbmctc2tp/bGxzLWJ1c2luZXNz/LWludGVybmV0LXRl/Y2hub2xvZ3ktY29u/Y2VwdHMtdHJhaW5p/bmctd2ViaW5hci1l/LWxlYXJuaW5nLXNr/aWxsc18yNzYzNC03/OTcuanBnP3NpemU9/NjI2JmV4dD1qcGc"
@@ -23,8 +23,8 @@ export default function ProductList() {
 
 function ProductCard({ title, imageUrl }) {
   return (
-    <div className="border-1 rounded-2xl px-4 py-4 pb-6">
-        <div className="flex flex-col justify-between  rounded-lg shadow-2xl border-black h-72 w-72 sm:h-52 cursor-pointer sm:w-80">
+    <div className="py-4 px-4 rounded-3xl border-2 mb-4 mx-4">
+        <div className="flex flex-col  justify-between  rounded-lg shadow-2xl border-black  w-60 cursor-pointer sm:w-80">
             <h1 className="text-lg font-bold p-4 md:text-xl bg-gray-100 rounded-t-lg shadow-md">{title}</h1>
             <img src={imageUrl} alt={title} className="w-full h-40 object-cover rounded-b-lg" />
         </div>

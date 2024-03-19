@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Inputbox } from '../components/Inputbox';
 import Heading from '../components/Heading';
 import SubHeading from '../components/SubHeading';
@@ -12,14 +12,17 @@ export default function Signin() {
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const Navigate = useNavigate();
+  const navigate = useNavigate();
 
 
   return (
     <div className='flex flex-col sm:flex-row'>
     <div className='justify-center items-center text-black w-1/2 rounded-sm bg-blue-50 flex'>
               <div className=' bg-white p-10 rounded-lg md:block hidden '>
-                <h1 className='text-2xl font-bold flex flex-row mb-2'>Welcome to <p className='text-blue-700 cursor-pointer' onClick={Navigate('/')}>"First Step"</p></h1>
+              <p className='text-4xl font-bold flex flex-row mb-2'>
+                Welcome to <span className='text-blue-700 cursor-pointer' onClick={() => navigate('/')}>" First Step " </span>
+              </p>
+
                 <p className='text-lg font-serif '>
                 Join our community and start sharing your thoughts and stories.
                 </p>
@@ -45,7 +48,7 @@ export default function Signin() {
                     });
                     localStorage.setItem("token", response.data.token)
                     localStorage.setItem("userId", response.data.userId)
-                    Navigate("/dashboard")
+                    navigate("/home")
                   }
                   catch(error){
                     console.error("Error during signup:", error)

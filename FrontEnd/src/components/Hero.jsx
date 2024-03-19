@@ -29,8 +29,8 @@ export default function Hero() {
       </div>
 
       {/* Right Section */}
-      <div className={`flex-1 flex justify-center items-center transition-transform ${imageLoaded ? 'translate-x-0' : 'translate-x-full'} transition-transform`} style={{maxWidth:`100%`, maxHeight:`100%`, transition:'transfrom 0.5 ease-in-out' }}>
-        <img className="max-w-full max-h-full rounded-lg shadow-lg mr-4" src='https://imgs.search.brave.com/mUR3Db3pJvCgVqk3_p1iaRhIbzBt3aS-cJNZzL80fxM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC9yeHFlZmVm/bDN0NWIvMXV4Tkt5/ZDEwT3ZGOHpnWHZN/SnhkSS9jYThmMGRk/OWYzNDYyYjQyNDYx/YTUxZmRiNzgxZTYx/Mi9HZXR0eUltYWdl/cy0xMTUwNTMzMDMy/LmpwZz9mbD1wcm9n/cmVzc2l2ZSZxPTgw' alt="Hero Image" />
+      <div className={`flex-1 flex justify-center m-4 rounded-lg items-center transition-transform ${imageLoaded ? 'translate-x-0' : 'translate-x-full'} transition-transform`} style={{maxWidth:`100%`, maxHeight:`100%`, transition:'transfrom 0.5 ease-in-out' }}>
+        <img className="max-w-full max-h-full shadow-lg rounded-xl  " src='https://imgs.search.brave.com/mUR3Db3pJvCgVqk3_p1iaRhIbzBt3aS-cJNZzL80fxM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC9yeHFlZmVm/bDN0NWIvMXV4Tkt5/ZDEwT3ZGOHpnWHZN/SnhkSS9jYThmMGRk/OWYzNDYyYjQyNDYx/YTUxZmRiNzgxZTYx/Mi9HZXR0eUltYWdl/cy0xMTUwNTMzMDMy/LmpwZz9mbD1wcm9n/cmVzc2l2ZSZxPTgw' alt="Hero Image" />
       </div>
     </div>
      </div>

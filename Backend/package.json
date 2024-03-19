@@ -1,9 +1,22 @@
 {
   "dependencies": {
+    "@prisma/client": "^5.11.0",
     "cors": "^2.8.5",
     "express": "^4.18.3",
     "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
     "node": "^21.7.1",
-    "nodemon": "^3.1.0"
-  }
+    "nodemon": "^3.1.0",
+    "prisma": "^5.11.0"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
