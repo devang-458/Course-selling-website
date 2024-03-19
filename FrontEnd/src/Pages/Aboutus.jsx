@@ -6,7 +6,7 @@ import AboutUsPage from '../components/AboutUsPage'
 export default function Aboutus() {
   return (
     <div>
-        <Header />
+        <Lo/>
         <AboutUsPage />
         <Footer />
     </div>
