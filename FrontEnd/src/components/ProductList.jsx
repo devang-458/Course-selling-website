@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 export default function ProductList() {
   const navigate = useNavigate()
   return (
-    <div  className="flex flex-col md:flex-row justify-center rounded-xl h-fit sm:h-screen mx-16 sm:mx-38 ">
-      <div className="flex justify-center bg-slate-100  border-4 rounded-lg flex-col mt-2 px-14">
+    <div  className="flex flex-col md:flex-row justify-center rounded-xl h-fit sm:h-screen mx-4 ">
+      <div className="flex justify-center bg-slate-100  border-4 rounded-lg flex-col mt-2 px-2 ">
         <h1 className="mt-2 text-2xl sm:text-4xl md:text-6xl font-bold text-center text-black">Our Products</h1>
         <div className="border-b-4 mt-1 border-black w-1/2 mx-auto "></div>
         <div className="flex flex-col sm:flex-row justify-center items-center m-6">
@@ -36,7 +36,7 @@ export default function ProductList() {
 function ProductCard({ title, imageUrl ,onClick, label }) {
   return (
     <div className="py-4 px-4 rounded-3xl border-2 m-4">
-        <div className="flex flex-col  justify-between  rounded-lg shadow-2xl border-black  w-60 cursor-pointer sm:w-80">
+        <div className="flex flex-col  justify-between  rounded-lg shadow-2xl border-black cursor-pointer  w-60 sm:w-80">
             <h1 className="text-lg font-bold p-4 md:text-xl bg-gray-100 rounded-t-lg shadow-md">{title}</h1>
             <img src={imageUrl} alt={title} className="sm:w-full h-40 w-60 object-cover rounded-b-lg" />
             <button className='bg-blue-600 rounded-lg px-6 font-bold py-2 m-4 cursor-pointer h-10  text-white hover:bg-blue-700' onClick={onClick}>{label}</button>
