@@ -9,7 +9,6 @@ import WhatweOffer from './Pages/WhatweOffer'
 import ForgetPassword from './Pages/ForgetPassord'
 import ResetPassword from './Pages/Reset-Password'
 import Trainingcourse from './Pages/Trainingcourse'
-import FormModal from './Pages/FormModal'
 import ResumePage from './Pages/ResumePage'
 
 
@@ -29,7 +28,6 @@ function App() {
       <Route path='/Forget-Password' element={<ForgetPassword/>} />
       <Route path='/reset-Password' element={<ResetPassword />}/>
       <Route path='/training-course' element={<Trainingcourse/>} />
-      <Route path='/enroll-form' element={<FormModal/>} />
       <Route path='resume-buildup' element={<ResumePage />}/>
       
     </Routes>
