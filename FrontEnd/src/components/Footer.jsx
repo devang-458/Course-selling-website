@@ -32,8 +32,8 @@ export default function Footer() {
                     <div className="h-full flex flex-col md:flex-row justify-around items-center">
                         <div className='flex flex-col justify-center text-center'>
                             <h1 className='text-xl bg-gray-300 px-4 py-1 rounded-lg mb-4 font-bold '>Courses</h1>
-                            <span onClick={()=>{navigate("/aboutus")}}> <p className='mt-2 mb-2 underline cursor-pointer '>About us</p></span>
-                            <span onClick={()=>{navigate("/whatweoffer")}}> <p className='mt-2 mb-2 underline cursor-pointer '>What We Offer</p></span>
+                            <a href='#'><span onClick={()=>{navigate("/aboutus")}}> <p className='mt-2 mb-2 underline cursor-pointer '>About us</p></span></a>
+                            <a href='#'><span onClick={()=>{navigate("/whatweoffer")}}> <p className='mt-2 mb-2 underline cursor-pointer '>What We Offer</p></span></a>
                             
                         </div>
                         <div className='flex flex-col justify-center mt-4 text-center'>

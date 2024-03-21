@@ -22,8 +22,6 @@ export default function Hero() {
           <h2 className='text-4xl md:text-6xl font-bold py-4'>Take Your Step Now</h2>
           <p className='text-lg md:text-xl text-gray-500 max-w-lg mx-auto px-4'>Take the "First step" toward your personal and professional goals with "First Step".</p>
           <div className='flex justify-center mt-8 space-x-4'>
-          <button className='border shadow-lg text-[10px] md:text-sm px-4 md:px-10 rounded-lg bg-blue-600 mt-2 hover:bg-blue-800 text-white font-bold py-4'>Get Started</button>
-              <button className='border shadow-lg text-[10px] md:text-sm px-4 md:px-10 rounded-lg bg-blue-600 mt-2 hover:bg-blue-800 text-white font-bold py-4'>Learn More</button>
           </div>
         </div>
       </div>

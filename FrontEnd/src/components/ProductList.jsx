@@ -38,7 +38,7 @@ function ProductCard({ title, imageUrl ,onClick, label }) {
     <div className="py-4 px-4 rounded-3xl border-2 m-4">
         <div className="flex flex-col  justify-between  rounded-lg shadow-2xl border-black  w-60 cursor-pointer sm:w-80">
             <h1 className="text-lg font-bold p-4 md:text-xl bg-gray-100 rounded-t-lg shadow-md">{title}</h1>
-            <img src={imageUrl} alt={title} className="w-full h-40 object-cover rounded-b-lg" />
+            <img src={imageUrl} alt={title} className="w-full h-30 sm:h-20 object-cover rounded-b-lg" />
             <button className='bg-blue-600 rounded-lg px-6 font-bold py-2 m-4 cursor-pointer h-10  text-white hover:bg-blue-700' onClick={onClick}>{label}</button>
         </div>
       
