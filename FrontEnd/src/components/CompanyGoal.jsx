@@ -10,7 +10,7 @@ function AbooutCard({title, imageUrl}){
       
       {/* Right Section */}
       <div className='flex-1 flex justify-center items-center bg-white'> 
-        <div className='text-center p-10 rounded-2xl m-4 text-sm sm:text-2xl bg-slate-100'>
+        <div className='text-center p-10 rounded-2xl m-4 text-sm sm:text-2xl border-4 font-semibold bg-slate-100'>
           <p>At our company, we offer training courses to help you learn new skills and improve your knowledge. We also create standout resumes to help you land your dream job. Our goal is to empower you for success in your career journey.</p>
         </div>
       </div>

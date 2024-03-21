@@ -4,7 +4,15 @@ import Home from './Pages/Home'
 import Signin from './Pages/Signin'
 import Signup from './Pages/Signup'
 import LoggedIn from './Pages/LoggedIn'
-import AboutUsPage from './components/AboutUsPage'
+import Aboutus from './Pages/Aboutus'
+import WhatweOffer from './Pages/WhatweOffer'
+import ForgetPassword from './Pages/ForgetPassord'
+import ResetPassword from './Pages/Reset-Password'
+import Trainingcourse from './Pages/Trainingcourse'
+import FormModal from './Pages/FormModal'
+import ResumePage from './Pages/ResumePage'
+
+
 
 
 function App() {
@@ -16,7 +24,14 @@ function App() {
       <Route path="/loggedin" element={<LoggedIn />} />
       <Route path='/signin' element={<Signin />} />
       <Route path='/signup' element={<Signup />} />
-      <Route path='/aboutus' element={<Abou />} />
+      <Route path='/aboutus' element={<Aboutus />} />
+      <Route path='/whatweoffer' element={<WhatweOffer />} />
+      <Route path='/Forget-Password' element={<ForgetPassword/>} />
+      <Route path='/reset-Password' element={<ResetPassword />}/>
+      <Route path='/training-course' element={<Trainingcourse/>} />
+      <Route path='/enroll-form' element={<FormModal/>} />
+      <Route path='resume-buildup' element={<ResumePage />}/>
+      
     </Routes>
 
     </BrowserRouter>

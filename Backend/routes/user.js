@@ -1,10 +1,10 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
-const { z } = require("zod");
+const zod = require("zod");
 const { PrismaClient } = require('@prisma/client');
-const { JWT_SECERT } = require("../config");
 const prisma = new PrismaClient();
 const router = express.Router();
+const JWT_SECERT = process.env.JWT_SECERT;
 
 const signupBody = zod.object({
     username: zod.string().email(),
